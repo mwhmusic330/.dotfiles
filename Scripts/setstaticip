@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+if grep -q 'dhcp4: true' /etc/netplan/00-installer-config.yaml; then
+  currentip=$(ip route get 1.1.1.1 | awk '{print$7; exit}')
+
+  cat <<EOF >> /etc/netplan/00-installer-config.yaml 
+  ### Static IP has been set.
+  network:
+    version: 2
+    ethernets:
+      enp6s18:
+        dhcp4: false
+        addresses:
+          - $currentip/24
+        routes:
+          - to: default
+            via: 192.168.1.1
+        nameservers:
+          addresses:
+EOF
+
+
+else
+  echo 'static ip already set'
+fi
+
