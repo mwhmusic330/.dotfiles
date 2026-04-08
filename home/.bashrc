@@ -101,6 +101,7 @@ alias qq='python3 $HOME/jupyterLLMstuff/serverrequest.py'
 alias zz='$HOME/.dotfiles/Scripts/update-grade'
 alias aa='$HOME/.dotfiles/Scripts/sessionizer'
 alias ii='$HOME/.dotfiles/Scripts/quickip'
+alias ss='sudo $HOME/.dotfiles/Scripts/setstaticip'
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.

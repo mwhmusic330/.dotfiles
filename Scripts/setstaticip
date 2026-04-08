@@ -3,7 +3,7 @@
 if grep -q 'dhcp4: true' /etc/netplan/00-installer-config.yaml; then
   currentip=$(ip route get 1.1.1.1 | awk '{print$7; exit}')
 
-  cat <<EOF >> /etc/netplan/00-installer-config.yaml 
+  cat <<EOF > /etc/netplan/00-installer-config.yaml 
   ### Static IP has been set.
   network:
     version: 2
@@ -15,8 +15,6 @@ if grep -q 'dhcp4: true' /etc/netplan/00-installer-config.yaml; then
         routes:
           - to: default
             via: 192.168.1.1
-        nameservers:
-          addresses:
 EOF
 
 
