@@ -128,3 +128,5 @@ export OPENCODE_CONFIG_DIR="$HOME/.dotfiles/home/opencode"
 # opencode
 export PATH=/home/michael/.opencode/bin:$PATH
 export PATH=/home/michael/.dotfiles/Scripts:$PATH
+
+

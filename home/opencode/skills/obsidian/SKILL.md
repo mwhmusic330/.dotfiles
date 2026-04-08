@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: Work with Obsidian notes and vaults
+description: Work with Obsidian notes and vaults.
 license: MIT
 compatibility: opencode
 metadata: {}
