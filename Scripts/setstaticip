@@ -24,6 +24,8 @@ EOF
   sudo netplan apply
 
 else
-  echo 'static ip already set'
+  echo 'static ip already set. Be sure to make a dhcp reservation on your router for this ip.'
 fi
+
+# be sure to make dhcp reservation for this machine on your router after running this script
 
