@@ -21,7 +21,7 @@ if grep -q 'dhcp4: true' /etc/netplan/00-installer-config.yaml; then
           - to: default
             via: 192.168.1.1
 EOF
-  sudo netplan apply
+  netplan apply
 
 else
   echo 'static ip already set. Be sure to make a dhcp reservation on your router for this ip.'
