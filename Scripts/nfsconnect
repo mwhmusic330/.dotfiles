@@ -7,7 +7,11 @@ sudo mkdir -p "$mntpoint"
 
 sudo mount -t nfs "$servip" "$mntpoint"
 
+sudo echo ""$servip" "$mntpoint" nfs defaults 0 0" | sudo tee -a /etc/fstab
+
+sudo mount -a
+
 df -h "$mntpoint"
 
-echo "If you see the drive listed with storage info, you're good."
+echo "If you see the drive listed with storage info, you're good. Reboot and run df -h to check persistence"
 
