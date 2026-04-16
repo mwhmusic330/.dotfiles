@@ -1,0 +1,13 @@
+#! /bin/env bash
+
+read -p "Enter mount point. (i.e. /mnt/whatever) " mntpoint
+read -p "Enter server. (i.e. 192.168.7.122i:/path/to/wherever " servip
+
+sudo mkdir -p "$mntpoint"
+
+sudo mount -t nfs "$servip" "$mntpoint"
+
+df -h "$mntpoint"
+
+echo "If you see the drive listed with storage info, you're good."
+
