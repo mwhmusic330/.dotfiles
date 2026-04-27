@@ -102,6 +102,12 @@ alias zz='$HOME/.dotfiles/Scripts/update-grade'
 alias aa='$HOME/.dotfiles/Scripts/sessionizer'
 alias ii='$HOME/.dotfiles/Scripts/quickip'
 alias ss='sudo $HOME/.dotfiles/Scripts/setstaticip'
+alias nfs='sudo $HOME/.dotfiles/Scripts/nfsconnect'
+
+# Alias's for git
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit -m"
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
@@ -131,4 +137,4 @@ export OPENCODE_CONFIG_DIR="$HOME/.dotfiles/home/opencode"
 export PATH=/home/michael/.opencode/bin:$PATH
 export PATH=/home/michael/.dotfiles/Scripts:$PATH
 
-
+fastfetch

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "massive-stock-data": {
+      "type": "remote",
+      "url": "http://192.168.1.44:8000",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer p7l10lv2wdSQ2pQRD0TOCSyLynKHwFP3"
+      }
+    }
+  }
+}
